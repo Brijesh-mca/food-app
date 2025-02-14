@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites | Contact</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <script defer src="js/home.js"></script>
+    <style>
+      .contact-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+      }
+      
+      .contact-container h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
+      .contact-form button {
+        background: #ff5722;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: 0.3s;
+      }
+      
+      .contact-form button:hover {
+        background: #e64a19;
+      }
+      
+      .contact-details {
+        margin-top: 20px;
+        font-size: 1.1em;
+      }
+
+      .contact-details a {
+        color: #ff5722;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .contact-details a:hover {
+        color: #e64a19;
+      }
+      
+      .map {
+        margin-top: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Delicious Bites</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+    <section class="middle">
+        <h1>Contact</h1>
+      </section>
+    <section class="contact-container">
+      <h2>Get in Touch</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      
+      <div class="contact-details">
+        <p>Email: <a href="mailto:ibrijesh.mca@gmail.com">ibrijesh.mca@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+91 8933-02-9339</a></p>
+        <p>Address: 123 Food Street, Varanasi, India</p>
+      </div>
+      
+      <div class="map">
+        <iframe
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen=""
+          loading="lazy"
+          src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Varanasi,India">
+        </iframe>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We are a team of designers and developers creating high-quality eCommerce experiences.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 Delicious Bites. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

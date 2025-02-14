@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites | Services</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/services.css" />
+
+    <script defer src="js/home.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Delicious Bites</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+
+    <section class="middle">
+      <h1>Services</h1>
+     
+    </section>
+    <p style="text-align: center; ">Explore our range of food services tailored to delight your taste buds.</p>
+
+    <section class="services-container">
+      <div class="service-card">
+        <img src="images/food-d.jpg" alt="Food Delivery" />
+        <h2>Fast Delivery</h2>
+        <p>Get your favorite meals delivered to your doorstep in no time.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/servi.png" alt="Catering Service" />
+        <h2>Event Catering</h2>
+        <p>Enjoy professional catering for weddings, parties, and corporate events.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/special.png" alt="Chef Special" />
+        <h2>Chef's Specials</h2>
+        <p>Experience exclusive dishes crafted by our top chefs.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Hungry? Order Now!</h2>
+      <p>Experience the best food service in town with Delicious Bites.</p>
+      <a href="contact.html" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We are a team of designers and developers creating high-quality eCommerce experiences.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 Delicious Bites. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const menuToggle = document.querySelector(".menu-toggle");
+          const navLinks = document.querySelector(".nav-links");
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+        });
+      </script>
+  </body>
+</html>

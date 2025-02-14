@@ -1,0 +1,117 @@
+/* About Us Section */
+.about-us {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5em;
+  color: #333;
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 82, 82),
+    rgb(250, 82, 82) 16.65%,
+    rgb(190, 75, 219) 16.65%,
+    rgb(190, 75, 219) 33.3%,
+    rgb(76, 110, 245) 33.3%,
+    rgb(76, 110, 245) 49.95%,
+    rgb(64, 192, 87) 49.95%
+  );
+
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* About Us Grid */
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.about-card {
+  background: #fff;
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.674);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-card p {
+  font-size: 1em;
+  color: #555;
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Call to Action */
+.about-cta {
+  margin-top: 40px;
+  padding: 20px;
+  background: linear-gradient(to right, green, rgba(106, 255, 0, 0.758));
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-cta h2 {
+  font-size: 2em;
+}
+
+.about-cta p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.about-cta button {
+  background: white;
+  color: green;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.about-cta button:hover {
+  background: yellow;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

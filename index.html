@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites | Home</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <script defer src="js/home.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Delicious Bites</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+
+
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Spring Sale 50% Off</h1>
+        <p>Fresh Tomatoes Organic Shop</p>
+        <a href="services.html" class="btn">Read More</a>
+      </div>
+    </section>
+    <section class="middle">
+      <h1>Buy & Eat</h1>
+    </section>
+    <aside class="categories">
+      <h2>All Categories</h2>
+      <ul>
+        
+        <button>Vegetables</button>
+        <button>Fruits</button>
+        <button>Salads</button>
+        <button>Fish & Seafood</button>
+        <button>Fresh Meat</button>
+        <button>Butter & Eggs</button>
+        <button>Milk</button>
+        <button>Oils & Vinegars</button>
+        <button>Bread</button>
+        <button>Frozen Food</button>
+      </ul>
+    </aside>
+
+    <section class="features">
+      <div class="feature">
+        <i class="icon-shipping"></i>
+        <p>Free Shipping on orders over $200</p>
+      </div>
+      <div class="feature">
+        <i class="icon-support"></i>
+        <p>24/7 Support</p>
+      </div>
+      <div class="feature">
+        <i class="icon-return"></i>
+        <p>30 Days Return Policy</p>
+      </div>
+      <div class="feature">
+        <i class="icon-secure"></i>
+        <p>100% Secure Payment</p>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/olive.jpg" alt="Product 1" />
+          <h3>Fresh Green Olives</h3>
+          <p>$26.00 <span class="old-price">$32.00</span></p>
+        </div>
+        <div class="product">
+          <img src="images/lemon.jpg" alt="Product 2" />
+          <h3>Organic Lemons</h3>
+          <p>$56.00 <span class="old-price">$82.00</span></p>
+        </div>
+        <div class="product">
+          <img src="images/raspberries.jpg" alt="Product 3" />
+          <h3>Juicy Passion Fruit</h3>
+          <p>$38.00 <span class="old-price">$62.00</span></p>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/olive.jpg" alt="Product 1" />
+          <h3>Fresh Green Olives</h3>
+          <p>$26.00 <span class="old-price">$32.00</span></p>
+        </div>
+        <div class="product">
+          <img src="images/raspberries.jpg" alt="Product 3" />
+          <h3>Juicy Passion Fruit</h3>
+          <p>$38.00 <span class="old-price">$62.00</span></p>
+        </div>
+        <div class="product">
+          <img src="images/lemon.jpg" alt="Product 2" />
+          <h3>Organic Lemons</h3>
+          <p>$56.00 <span class="old-price">$82.00</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        <p>"Amazing quality and service! Highly recommend this store."</p>
+        <h4>- Brijesh</h4>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get updates on new products and offers.</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are a team of designers and developers creating high-quality
+            eCommerce experiences.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        &copy; 2025 Delicious Bites. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

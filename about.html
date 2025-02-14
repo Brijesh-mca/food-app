@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites | About</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+
+    <script defer src="js/home.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Delicious Bites</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+    
+    <section class="middle">
+      <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <h2>Our Story</h2>
+        <p>
+          Delicious Bites was founded with a passion for bringing people closer
+          through the love of food. What started as a small home kitchen has now
+          transformed into a thriving business delivering mouth-watering dishes
+          to food lovers everywhere.
+        </p>
+        
+        <h2>Our Mission</h2>
+        <p>
+          To provide high-quality, delicious, and healthy meals while delivering
+          an unforgettable dining experience to our customers.
+        </p>
+        
+        <h2>Our Vision</h2>
+        <p>
+          To become a global name in the food industry by offering innovative,
+          tasty, and sustainable meal solutions.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <p>"Absolutely the best food I’ve ever had! Fresh, delicious, and made with love."</p>
+          <h4>- Brijesh</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Incredible flavors and outstanding customer service! A must-try for every food lover."</p>
+          <h4>- Vishvakarma</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" >
+      <h2>Join Us on Our Journey</h2>
+      <p>Experience the best of flavors with Delicious Bites. Sign up now to stay updated on our latest offers and dishes!</p>
+      <a href="signup.html" class="btn">Sign Up Now</a>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We are a team of designers and developers creating high-quality eCommerce experiences.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 Delicious Bites. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
