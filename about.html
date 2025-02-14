@@ -10,6 +10,12 @@
     <script defer src="js/home.js"></script>
   </head>
   <body>
+
+ <!-- Loader -->
+ <div class="loader-container" id="loader">
+  <div class="loader"></div>
+</div>
+
     <header>
       <nav class="navbar">
         <div class="logo">Delicious Bites</div>
@@ -101,6 +107,14 @@
     </footer>
 
     <script>
+
+window.onload = function() {
+            setTimeout(() => {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 1000); // 2 seconds delay
+        };
+
       document.addEventListener("DOMContentLoaded", () => {
         const menuToggle = document.querySelector(".menu-toggle");
         const navLinks = document.querySelector(".nav-links");
